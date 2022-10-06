@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-family: "Manrope";
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(210deg, 46%, 95%);
+}
+
+p {
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.wrapper {
+  width: 320px;
+  margin: 10rem auto;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+header {
+  height: 16rem;
+  overflow: hidden;
+}
+header img {
+  width: 100%;
+}
+
+main {
+  padding: 2.5rem;
+}
+main h1 {
+  color: hsl(217deg, 19%, 35%);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+main .main_p {
+  color: hsl(214deg, 17%, 51%);
+  font-size: 0.95rem;
+  letter-spacing: 0.02rem;
+  margin-bottom: 2rem;
+}
+
+.bottom_section {
+  display: flex;
+  align-items: center;
+}
+.bottom_section .photo_mich {
+  width: 3rem;
+  border-radius: 50%;
+}
+.bottom_section .bio {
+  width: 100%;
+  padding-left: 1rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.bottom_section h2 {
+  font-size: 1rem;
+  color: hsl(217deg, 19%, 35%);
+}
+.bottom_section p {
+  color: hsl(212deg, 23%, 69%);
+}
+.bottom_section .arrow {
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+.bottom_section .arrow_contain {
+  height: 28px;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: hsl(210deg, 46%, 95%);
+  padding-left: 0;
+  padding-bottom: 3px;
+  position: relative;
+  cursor: pointer;
+}
+
+.pop_up {
+  position: absolute;
+  background-color: hsl(217deg, 19%, 35%);
+  width: 320px;
+  z-index: 10;
+  top: -1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  left: -20rem;
+  height: 6rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.pop_up p {
+  letter-spacing: 0.4rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.pop_down {
+  display: none;
+}
+
+@media screen and (min-width: 700px) {
+  .wrapper {
+    display: flex;
+    width: auto;
+    max-width: 700px;
+  }
+  header {
+    height: auto;
+  }
+  header img {
+    height: 100%;
+  }
+  .pop_up {
+    border-radius: 0.5rem;
+    top: -5rem;
+    height: 4rem;
+    width: 20rem;
+    left: -10rem;
+  }
+}/*# sourceMappingURL=style.css.map */
